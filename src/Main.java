@@ -7,6 +7,8 @@ public class Main {
         task5 ();
         task6 ();
         task7 ();
+        task8 ();
+        task9 ();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -46,5 +48,26 @@ public class Main {
         System.out.println("Задача 7");
         for (int i = 1; i <= 512; i = i * 2)
             System.out.println("Итерация чисел с умножением " + i);
+    }
+    public static void task8 () {
+        System.out.println("Задача 8");
+        int saving = 29000;
+        int total = 0;
+        for (int i = 0; i < 12; i = i + 1) {
+            total = total + saving;
+            System.out.println("Месяц " + i + " сумма накоплений равна " +total);
+        }
+        System.out.println(total);
+    }
+    public static void task9 () {
+        System.out.println("Задача 9");
+        int saving = 29000;
+        int total = 0;
+        for (int i = 0; i < 12; i = i + 1) {
+            total = total + total / 100;
+            total = total + saving;
+            System.out.println("Месяц " + i + " сумма накоплений равна " +total);
+        }
+        System.out.println(total);
     }
 }
