@@ -4,6 +4,8 @@ public class Main {
         task2 ();
         task3 ();
         task4 ();
+        task5 ();
+        task6 ();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -28,5 +30,15 @@ public class Main {
         for (int i = 10; i > -11; i = i - 1) {
             System.out.println("Обратная итерация " + i);
         }
+    }
+    public static void task5 () {
+        for (int y = 1904; y < 2096; y=y + 4) {
+            System.out.println(y + " год явдяется високосным");
+        }
+    }
+    public static void task6 () {
+        System.out.println("Задача 6");
+        for (int i = 7; i <= 98; i = i + 7)
+            System.out.println("Итерация чисел " +i);
     }
 }
